@@ -1,0 +1,5 @@
+---
+- name: test win playbook
+  hosts: windows
+  tasks:
+  - name:
