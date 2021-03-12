@@ -1,0 +1,13 @@
+---
+- name: check servizi in base all'ambiente
+  hosts: test
+  become: yes
+  tasks:
+
+  - name: check uno
+    shell: yum install postgresql -y
+    when:  env == "svil"
+
+  - name: check due
+    shell: yum install telnet -y
+    when:  env  == "prod"
